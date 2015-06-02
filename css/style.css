@@ -1,0 +1,337 @@
+/******************************** Menu déroulant **********************************/
+.hamburger{
+  background:none;
+  position:fixed;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#FF1493;
+  border:0;
+  font-size:2em;
+  cursor:pointer;
+  outline:none;
+  z-index:1;
+}
+.cross{
+  background:none;
+  position:fixed;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#FF1493;
+  border:0;
+  font-size:5em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{
+	  position:fixed;
+	z-index:1000000; 
+	font-weight:bold; 
+	font-size:1.4em; 
+	width:100%; 
+	background:#F5F5F5;  
+	text-align:center;
+}
+.menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+}
+.menu li {
+	display: block;   
+	padding:15px 0 15px 0; 
+}
+.menu li:hover {
+	display: block;    
+	background:#F5F5F5; 
+	padding:15px 0 15px 0; 
+}
+.menu a {
+	text-decoration:none; 
+	color:black;
+}
+.menu a:hover {
+	color: #FF1493;
+}
+
+
+/******************************** Paramètres  de base **********************************/
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 21px;
+	font-size: 13px;
+}
+
+/******************************** Menu **********************************/
+h1 img {
+	width: 12%;
+	margin-left: 20px;
+	margin-top: -45px;
+}
+.nav-menu {
+	background-color:#F5F5F5;
+	height: 45px;
+	width:100%;
+	position: fixed;
+	z-index: 5;
+}
+.ulmenu {
+	display: inline;
+	font-family: 'Open Sans', Arial;
+	font-size:12px;
+	text-transform: uppercase; 
+	float: right;
+	margin-right: 10px;
+	margin-top: -55px;
+}
+.nav-menu a {
+	display:inline-block;
+    text-decoration: none;
+    color:black;
+}
+.nav-menu li {
+	display:inline-block; /* Pour que la magie opere */
+}
+.nav-menu a:hover {
+ 	color:#FF1493;
+ }
+.nav-menu li:after { 
+	content:"\2022"; 
+	color: #FF1493;
+	margin: 20px;
+}
+
+/******************************** header **********************************/
+
+header {
+	height: 900px;
+}
+
+header img {
+	width: 100%;
+	position:absolute;
+	z-index: -3;
+	left: 0;
+	top: 0;
+}
+
+#bloc-accueil img {
+	width: 11%;
+	padding: 15px;
+}
+
+#bloc-accueil {
+	text-align: center;
+	padding-top: 300px;
+}
+
+/******************************** . glyphe . **********************************/
+h2:before { 
+	content:"\00b7"; 
+	color: #FF1493;
+}
+
+h2:after { 
+	content:"\00b7"; 
+	color: #FF1493;
+}
+
+h2 {
+	text-transform: uppercase; 
+	text-align: center;
+	font-family: 'Open Sans', Arial;
+	font-size:39px;
+	letter-spacing: 1px;
+    font-weight: normal;
+    padding-top: 30px; 
+}
+
+h3 {
+	font-family: 'Open Sans', Arial;
+	font-size:23px;
+	color: #FF1493;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/******************************** A Propos **********************************/
+#a-propos {
+	width:100%;
+	z-index: 3;
+	background-image:url(../images/mathilderossi.jpg);
+	background-repeat: no-repeat;
+}
+
+#a-propos a {
+    text-decoration: none;
+    color:black;
+}
+
+section #a-propos {
+	height:500px;
+}
+
+#a-propos p {
+	margin-left: 400px; /* centrer le texte */
+	margin-right: 97px;
+	line-height: 26px;
+}
+
+
+.rose
+{
+    color: #FF1493;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+/******************************** Contact **********************************/
+#contact img {
+	width: 100%;
+	position:absolute;
+	z-index: -1;
+}
+
+#contact p {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	padding-top: 40px;
+}
+
+#contact {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#contact h5 {
+	font-size: 15px;
+	text-decoration: none;
+	padding-bottom: 14px;
+	text-align: center;
+}
+
+#contact a {
+    text-decoration: none;
+    color:black;
+}
+
+#contact a:hover {
+ 	color:#FF1493;
+ }
+
+ /******************************** Footer **********************************/
+footer {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	text-align: center;
+}
+.icone img { 
+	width: 3%;
+	padding:10px; 
+}
+
+.centre { 
+	width:auto;
+	display: inline;
+}
+
+h6 { 
+	padding-top: 20px;
+	color: black;
+
+}
+
+
+/******************************** Parallax **********************************/
+
+section.module.parallax-1 {
+  background-image: url("../images/background.png");
+    padding: 500px 0;
+}
+
+section.module.parallax-2 {
+	background-image: url("../images/contact.png");
+	padding: 240px 0;
+}
+
+
+/******************************** Responsive ordi + petit **********************************/
+
+@media only screen and (max-width: 1200px) {
+	header {
+		height: 720px;
+	}
+		.icone img { 
+		width: 04%;
+	}
+	.overlay h4  {
+	display: none;
+	}
+}
+
+/******************************** Responsive Design Tablette **********************************/
+@media only screen and (max-width: 767px) {
+	header {
+		height: 440px;
+	}
+	#bloc-accueil {
+		padding-top: 150px;
+	}
+	#a-propos p {
+		margin-left: 15px; /* centrer le texte */
+		margin-right: 15px;
+	}
+	#a-propos {
+		text-align: center;
+		background-image:none;
+	}
+	section.module.parallax-2 {
+		padding: 100px 0;
+	}
+	section.module.parallax-2  {
+		background-size: 100%
+	}	
+	.hamburger{
+		z-index:100;
+	}
+	.nav-menu ul {
+		display: none;
+	}
+	h1 IMG{
+		width: 20% ;
+	}
+	.nav-menu {
+  		background-color: transparent;
+  	}
+
+	.icone img { 
+		width: 06%;
+	}
+
+}
+
+
+
+
+/******************************** Responsive Design Téléphone + Tablette  (voir main.css) **********************************/
+
+
+
+/******************************** Responsive Design Téléphone - paysage **********************************/
+
+@media only screen and (max-width: 600px) {
+
+}
+
+

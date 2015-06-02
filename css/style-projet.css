@@ -1,0 +1,146 @@
+
+/******************************** Menu des Projets **********************************/
+
+.photoProjet IMG {
+    text-align: center;
+    width: 100%;
+}
+.photoProjet {
+	background-image:url(../images/background-04.png);
+	background-repeat: repeat;
+}
+
+.none {
+	height: 20px;
+}
+
+.pin IMG {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+
+}
+/******************************** Bouton pour aller voir les autres sites **********************************/
+
+#bouton-site{
+    width: 110px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #FF1493;
+    border-radius: 10px;
+}
+#bouton-site p {
+    color: white;
+    padding-top: 4px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight:bold;
+        cursor: pointer; 
+}
+
+ #bouton-site a {
+    text-decoration: none;
+    color: white;
+ }
+ #bouton-site a:hover {
+    text-decoration: none;
+    color:#e6e8ea;
+ }
+ /******************************** Colonnes / description projet **********************************/
+.description-projet { 
+    margin-right:150px;
+    margin-left:150px;
+}
+.colonne1 { 
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+
+.colonne { 
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.colonnex3 { 
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+.h6enrose { 
+    color:#FF1493;
+}
+.colonne1 i {
+    color:#FF1493;
+}
+.colonne i {
+    color:#FF1493;
+}
+.colonnex3 i {
+    color:#FF1493;
+}
+/******************************** Responsive ordi + petit **********************************/
+
+@media only screen and (max-width: 1200px) {
+	.pin IMG {
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+    .description-projet { 
+        margin-right:100px;
+        margin-left:100px;
+    }
+}
+
+/******************************** Responsive Design Tablette **********************************/
+@media only screen and (max-width: 767px) {
+    .pin IMG {
+        padding-left: 45px;
+        padding-right: 45px;
+        }
+    .description-projet { 
+        margin-right:100px;
+        margin-left:100px;
+    }
+
+}
+
+/******************************** Responsive Design Téléphone - paysage **********************************/
+
+@media only screen and (max-width: 600px) {
+	.pin IMG {
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+    .description-projet { 
+    margin-right:20px;
+    margin-left:20px;
+    }
+
+}
+
+/******************************** Responsive Design Tablette **********************************/
+
+@media only screen and (max-width: 479px) {
+	.pin IMG {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+    .description-projet { 
+        margin-right:02px;
+        margin-left:02px;
+    }
+}
+
+/******************************** Responsive Design Téléphone **********************************/
+
+@media only screen and (max-width: 320px) {
+	.pin IMG {
+ 	   padding-left: 0px;
+ 	   padding-right: 0px;
+		}
+
+}
